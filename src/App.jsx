@@ -1,6 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
-import AboutP from "./pages/AboutP";
 import BusinesP from "./pages/BusinesP";
 import EntertaimenP from "./pages/EntertaimenP";
 import HealthP from "./pages/HealthP";
@@ -17,7 +16,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomeP />} />
-          <Route path="about" element={<AboutP />} />
           <Route path="post" element={<PostP />} />
           <Route path="busines" element={<BusinesP />} />
           <Route path="sport" element={<SportsP />} />
